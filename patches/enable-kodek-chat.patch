@@ -1,0 +1,15 @@
+diff --git a/src/vs/workbench/contrib/chat/browser/chat.contribution.ts b/src/vs/workbench/contrib/chat/browser/chat.contribution.ts
+index f0013a4..bfcab77 100644
+--- a/src/vs/workbench/contrib/chat/browser/chat.contribution.ts
++++ b/src/vs/workbench/contrib/chat/browser/chat.contribution.ts
+@@ -179,3 +179,3 @@ configurationRegistry.registerConfiguration({
+ 			markdownDescription: nls.localize('chat.commandCenter.enabled', "Controls whether the command center shows a menu for actions to control chat (requires {0}).", '`#window.commandCenter#`'),
+-			default: false
++			default: true
+ 		},
+@@ -701,3 +701,3 @@ configurationRegistry.registerConfiguration({
+ 			description: nls.localize('chat.disableAIFeatures', "Disable and hide built-in AI features provided by GitHub Copilot, including chat and inline suggestions."),
+-			default: true,
++			default: false,
+ 			scope: ConfigurationScope.WINDOW
+
